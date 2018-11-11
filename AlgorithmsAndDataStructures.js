@@ -112,16 +112,17 @@
 // function repeatStringNumTimes(str, num) {
 
 //     let strArray = []
-//     let individual = str.split('').join('') //?
+//     let individual = str.split('').join('') 
 
 //         for(let i = 1; i<=num; i++){
 //             strArray.push(individual)
 //         }
-//         let final = strArray.join('') //?
-//         return final;  //?
+//         let final = strArray.join('') 
+//         return final;  
 //     }
     
 //   repeatStringNumTimes("abc", 3);
 
 //---------------------------------------------------------
 // Truncate a String
+
