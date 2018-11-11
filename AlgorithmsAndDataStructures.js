@@ -11,7 +11,8 @@
 
 // factorialize(5);
 
-//------------------------------------------------------
+// ----------------- Find the Longest Word in a String -----------------
+
 // function findLongestWordLength(str) {
 //   let wordArray = str.split(' ')
 //   let biggest = 0
@@ -23,26 +24,9 @@
 
 // findLongestWordLength("The quick brown fox jumped over the lazy dog");
 
-//------------------------------------------------------
+// ----------------- Palindrome checker -----------------
 
-//  function reduceCharacters(str) {
-//   let reducedArray = []
-//   let characterArray = str.split('')
-
-//   for(let i = 0; i < characterArray.length; i++) {
-//     if(characterArray[i] !== reducedArray[reducedArray.length-1]){
-//       reducedArray.push(characterArray[i])
-//     } 
-//   }
-//   return reducedArray
-
-// }
-
-// console.log("Result is ",reduceCharacters("aabbcc"))
-
-//--------------------------------------------------
-
-// function palindrom(word) {
+// function palindrome(word) {
 //   let array = word.split("");
 //   let reversed = []
 
@@ -52,10 +36,8 @@
 //   console.log(array,reversed)
 //   reversed = reversed.join("")
 //   word == reversed ?  console.log("true") : console.log("false")
-
 // }
-
-// palindrom("be4b")
+// palindrome("be4b")
 
 // function palindrom2(word) {
 //   let y = word.split('').reverse().join('')
@@ -63,7 +45,8 @@
 // }
 // palindrom2("beeb")
 
-//---------------------------------------------------------
+// ----------------- Return Largest Numbers In Arrays -----------------
+
 // function largestOfFour(arr) {
 //   let result = []
   
@@ -82,7 +65,7 @@
 
 // largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
-//--------------------------------------------------------
+// -----------------Confirm the Ending-----------------
 
 // function confirmEnding(str, target) {
 
@@ -106,8 +89,7 @@
 
 // confirmEnding("Bastian", "ian");
 
-//---------------------------------------------------------
-// Repeat a String Repeat a String
+// -----------------Repeat a String Repeat a String-----------------
 
 // function repeatStringNumTimes(str, num) {
 
@@ -123,6 +105,5 @@
     
 //   repeatStringNumTimes("abc", 3);
 
-//---------------------------------------------------------
-// Truncate a String
+// -----------------Truncate a String-----------------
 
