@@ -108,3 +108,33 @@ function repeatStringNumTimes(str, num) {
 
 // -----------------Truncate a String-----------------
 
+function truncateString(str, num) {
+    let result = ""
+    console.log(str.length, num)
+    if(str.length === num){
+        result = str
+    } else if(str.length < num) {
+        result = str
+    } else {
+        result = str.slice(0,num) 
+        result += "..."
+    }  
+    return result;
+    }
+
+//  truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length)
+//  truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2)
+//   truncateString("A-tisket a-tasket A green and yellow basket", 8);
+//   truncateString("Peter Piper picked a peck of pickled peppers", 11);
+
+// -----------------Finders Keepers-----------------
+/* Create a function that looks through an array (first argument) 
+and returns the first element in the array that passes a truth test 
+(second argument). If no element passes the test, return undefined.*/
+
+function findElement(arr, func) {
+    let num = 0;
+    return num;
+  }
+  
+  findElement([1, 2, 3, 4], num => num % 2 === 0);
