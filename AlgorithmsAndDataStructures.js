@@ -1,4 +1,4 @@
-//FreeCodeCamp - Javascript-algorithms-and-data-structures
+// FreeCodeCamp - Javascript-algorithms-and-data-structures
 //Basic Algorithmic Scripting
 
 // function factorialize(num) {
@@ -155,13 +155,14 @@ function findElement(arr, func) {
 Boolean primitives are true and false.*/
 
 function booWho(bool) {
-    // What is the new fad diet for ghost developers? The Boolean.
-    return bool;
+  console.log(typeof (bool))
+  if(typeof bool == "boolean"){
+    return true
   }
-  
-  booWho(null);
+  return false
+  }
 
-// booWho(true) //should return true.
+// booWho(true) //should return true. //?
 // booWho(false) //should return true.
 // booWho([1, 2, 3]) //should return false.
 // booWho([].slice) //should return false.
@@ -171,3 +172,42 @@ function booWho(bool) {
 // booWho("a") //should return false.
 // booWho("true") //should return false.
 // booWho("false") //should return false.
+
+// ------------Title Case a Sentence-----------------------
+/*Return the provided string with the first letter of each word capitalized. 
+Make sure the rest of the word is in lower case. For the purpose of this 
+exercise, you should also capitalize connecting words like "the" and "of". */
+
+// Can't do to Array, only works on strings.
+
+function titleCase(str) {
+  str = str.toLowerCase()
+  let arrOfStr = str.split(' ') //?
+  for(let i = 0; i < arrOfStr.length; i++){
+    arrOfStr[i][0].toUpperCase(); //?
+  }
+  console.log(arrOfStr)
+  return arrOfStr.join(' '); //?
+}
+
+ titleCase("I'm a little tea pot");
+// titleCase("I'm a little tea pot") //should return a string.
+// titleCase("I'm a little tea pot") //should return I'm A Little Tea Pot.
+// titleCase("sHoRt AnD sToUt") //should return Short And Stout.
+// titleCase("HERE IS MY HANDLE HERE IS MY SPOUT") //should return Here Is My Handle Here Is My Spout.
+
+// ----------------Slice and Splice-----------------------
+/*You are given two arrays and an index.
+Use the array methods slice and splice to copy each element of the first array into the second array, in order.
+Begin inserting elements at index n of the second array.
+Return the resulting array. The input arrays should remain the same after the function runs.*/
+
+function frankenSplice(arr1, arr2, n) {
+  // It's alive. It's alive!
+  return arr2;
+}
+
+
+frankenSplice([1, 2, 3], [4, 5], 1) //should return [4, 1, 2, 3, 5].
+// frankenSplice([1, 2], ["a", "b"], 1) //should return ["a", 1, 2, "b"].
+// frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2) //should return ["head", "shoulders", "claw", "tentacle", "knees", "toes"].
