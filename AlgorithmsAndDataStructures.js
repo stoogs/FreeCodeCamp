@@ -1,4 +1,5 @@
 //FreeCodeCamp - Javascript-algorithms-and-data-structures
+//Basic Algorithmic Scripting
 
 // function factorialize(num) {
 //   let total = 1
@@ -134,7 +135,39 @@ and returns the first element in the array that passes a truth test
 
 function findElement(arr, func) {
     let num = 0;
-    return num;
+
+    for(let i = 0; i < arr.length; i++){
+        num = arr[i]
+        if(func(num) == true)
+        {   console.log(num)
+            return num
+        }
+    }
+    console.log(num)
+    return undefined;
+  }
+  //findElement([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; }) //should return 8
+  //findElement([1, 3, 5, 9], function(num) { return num % 2 === 0; }) //should return undefined.
+  //findElement([1, 2, 3, 4], num => num % 2 === 0); //should return 2
+
+// -----------------Boo who-----------------
+/*Check if a value is classified as a boolean primitive. Return true or false.
+Boolean primitives are true and false.*/
+
+function booWho(bool) {
+    // What is the new fad diet for ghost developers? The Boolean.
+    return bool;
   }
   
-  findElement([1, 2, 3, 4], num => num % 2 === 0);
+  booWho(null);
+
+// booWho(true) //should return true.
+// booWho(false) //should return true.
+// booWho([1, 2, 3]) //should return false.
+// booWho([].slice) //should return false.
+// booWho({ "a": 1 }) //should return false.
+// booWho(1) //should return false.
+// booWho(NaN) //should return false.
+// booWho("a") //should return false.
+// booWho("true") //should return false.
+// booWho("false") //should return false.
